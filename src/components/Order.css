@@ -1,0 +1,439 @@
+.orderNow h1 {
+    color: #696969;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3 {
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #C01B36;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 1px ridge #BDBEC2;
+}
+
+.inputData {
+    padding: 30px 0px 0px 0px;
+}
+
+.add, .cancel, .clear, .invoice {
+    -moz-box-shadow: 0px 10px 14px -7px #C01B36;
+    -webkit-box-shadow: 0px 10px 14px -7px #C01B36;
+    box-shadow: 0px 10px 14px -7px #C01B36;
+    background-color: #C01B36;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #BDBEC2;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #696969;
+}
+
+.add:hover, .cancel:hover, .clear:hover, .invoice:hover {
+    animation-name: buttonColorChange;
+    animation-duration: 0.5s;
+    -moz-box-shadow: 0px 10px 14px -7px #696969;
+    -webkit-box-shadow: 0px 10px 14px -7px #696969;
+    box-shadow: 0px 10px 14px -7px #696969;
+    background-color: #696969;
+    color: #F0F0F0;
+    text-shadow: 0px 1px 0px #BDBEC2;
+}
+
+@keyframes buttonColorChange {
+    from {
+        -moz-box-shadow: 0px 10px 14px -7px #C01B36;
+        -webkit-box-shadow: 0px 10px 14px -7px #C01B36;
+        box-shadow: 0px 10px 14px -7px #C01B36;
+        background-color: #C01B36;
+        color: #BDBEC2;
+        text-shadow: 0px 1px 0px #696969;
+    }
+    to {
+        -moz-box-shadow: 0px 10px 14px -7px #696969;
+        -webkit-box-shadow: 0px 10px 14px -7px #696969;
+        box-shadow: 0px 10px 14px -7px #696969;
+        background-color: #696969;
+        color: #F0F0F0;
+        text-shadow: 0px 1px 0px #BDBEC2;
+    }
+}
+
+.add:active, .cancel:active, .clear:active, .invoice:active {
+    position: relative;
+    top: 1px;
+}
+
+.productList {
+    height: auto;
+    min-height: 200px;
+}
+
+.read-table {
+    width: 100%;
+}
+
+.tableHeaders {
+    cursor: pointer;
+    font-size: 25px;
+    border: 2px solid #BDBEC2;
+    background-color: #C01B36;
+    color: #BDBEC2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.records {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+td {
+    border-left: 2px solid #BDBEC2;
+    border-right: 2px solid #BDBEC2;
+    border-bottom: 2px solid #BDBEC2;
+}
+
+tfoot td {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #BDBEC2;
+    color: #C01B36;
+    border: 2px solid #C01B36
+}
+
+/* UI Design */
+
+.ui-underline {
+    border: none;
+    border-bottom: 2px solid #C01B36;
+    outline: none;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    color: #696969;
+}
+
+.ui-underline::placeholder {
+    font-weight: bold;
+    ;
+}
+
+.ui-form-white, .ui-form-white .ui-placeholder span {
+    color: #FFF;
+}
+
+.ui-form-white input::placeholder, .ui-form-white textarea::placeholder {
+    color: #FFF;
+    opacity: 0.5;
+}
+
+.ui-form-white input, .ui-form-white textarea {
+    border-bottom-color: #FFF;
+}
+
+.ui-form-white .ui-underline {
+    color: #fff;
+}
+
+.ui-form-black, .ui-form-black .ui-placeholder span {
+    color: #000;
+}
+
+.ui-form-black input::placeholder, .ui-form-black textarea::placeholder {
+    color: #000;
+    opacity: 0.5;
+}
+
+.ui-form-black input, .ui-form-black textarea {
+    border-bottom-color: #000;
+}
+
+.ui-form-black .ui-underline {
+    color: #000;
+}
+
+.ui-placeholder {
+    position: relative;
+    perspective: 100px;
+}
+
+.ui-placeholder input, .ui-placeholder textarea {
+    width: 100%;
+    background-color: transparent;
+}
+
+.ui-placeholder input~span, .ui-placeholder textarea~span {
+    visibility: visible;
+    position: absolute;
+    opacity: 0;
+    display: inline-block;
+    transition: all 1s cubic-bezier(.08, .86, .35, .94);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #C01B36;
+}
+
+.ui-placeholder input:not(:placeholder-shown)~span, .ui-placeholder textarea:not(:placeholder-shown)~span {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* perspective origin */
+
+.ui-placeholder.ui-leftTop {
+    perspective-origin: left top;
+}
+
+.ui-placeholder.ui-centerTop {
+    perspective-origin: center center;
+}
+
+.ui-placeholder.ui-rightTop {
+    perspective-origin: right top;
+}
+
+.ui-placeholder.ui-leftBottom {
+    perspective-origin: left bottom;
+}
+
+.ui-placeholder.ui-centerBottom {
+    perspective-origin: center bottom;
+}
+
+.ui-placeholder.ui-rightBottom {
+    perspective-origin: right bottom;
+}
+
+.ui-placeholder.ui-leftTopCorner {
+    perspective-origin: left top;
+}
+
+.ui-placeholder.ui-leftCenter {
+    perspective-origin: left center;
+}
+
+.ui-placeholder.ui-leftBottomCorner {
+    perspective-origin: left bottom;
+}
+
+.ui-placeholder.ui-rightTopCorner {
+    perspective-origin: right top;
+}
+
+.ui-placeholder.ui-rightCenter {
+    perspective-origin: right center;
+}
+
+.ui-placeholder.ui-rightBottomCorner {
+    perspective-origin: right bottom;
+}
+
+/* set position */
+
+.ui-placeholder.ui-leftTop input~span, .ui-placeholder.ui-leftTop textarea~span {
+    bottom: 100%;
+    left: 0;
+}
+
+.ui-placeholder.ui-centerTop input~span, .ui-placeholder.ui-centerTop textarea~span {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ui-placeholder.ui-rightTop input~span, .ui-placeholder.ui-rightTop textarea~span {
+    bottom: 100%;
+    right: 0;
+}
+
+.ui-placeholder.ui-leftBottom input~span, .ui-placeholder.ui-leftBottom textarea~span {
+    top: 100%;
+}
+
+.ui-placeholder.ui-centerBottom input~span, .ui-placeholder.ui-centerBottom textarea~span {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ui-placeholder.ui-rightBottom input~span, .ui-placeholder.ui-rightBottom textarea~span {
+    top: 100%;
+    right: 0;
+}
+
+.ui-placeholder.ui-leftTopCorner input~span, .ui-placeholder.ui-leftTopCorner textarea~span {
+    right: calc(100% + 5px);
+    top: 0;
+    width: 200px;
+    text-align: right;
+}
+
+.ui-placeholder.ui-leftCenter input~span, .ui-placeholder.ui-leftCenter textarea~span {
+    right: calc(100% + 5px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: right;
+}
+
+.ui-placeholder.ui-leftBottomCorner input~span, .ui-placeholder.ui-leftBottomCorner textarea~span {
+    right: calc(100% + 5px);
+    bottom: 0;
+    width: 200px;
+    text-align: right;
+}
+
+.ui-placeholder.ui-rightTopCorner input~span, .ui-placeholder.ui-rightTopCorner textarea~span {
+    left: calc(100% + 5px);
+    top: 0;
+    width: 200px;
+    text-align: left;
+}
+
+.ui-placeholder.ui-rightCenter input~span, .ui-placeholder.ui-rightCenter textarea~span {
+    left: calc(100% + 5px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: left;
+}
+
+.ui-placeholder.ui-rightBottomCorner input~span, .ui-placeholder.ui-rightBottomCorner textarea~span {
+    left: calc(100% + 5px);
+    bottom: 0;
+    width: 200px;
+    text-align: left;
+}
+
+/* slide effects */
+
+/**************************************************************/
+
+.ui-placeholder.ui-leftTop.ui-slide textarea~span, .ui-placeholder.ui-centerTop.ui-slide textarea~span, .ui-placeholder.ui-rightTop.ui-slide textarea~span, .ui-placeholder.ui-leftTop.ui-slide input~span, .ui-placeholder.ui-centerTop.ui-slide input~span, .ui-placeholder.ui-rightTop.ui-slide input~span {
+    bottom: 90%;
+}
+
+.ui-placeholder.ui-leftBottom.ui-slide textarea~span, .ui-placeholder.ui-centerBottom.ui-slide textarea~span, .ui-placeholder.ui-rightBottom.ui-slide textarea~span, .ui-placeholder.ui-leftBottom.ui-slide input~span, .ui-placeholder.ui-centerBottom.ui-slide input~span, .ui-placeholder.ui-rightBottom.ui-slide input~span {
+    top: 90%;
+}
+
+.ui-placeholder.ui-leftTopCorner.ui-slide textarea~span, .ui-placeholder.ui-leftCenter.ui-slide textarea~span, .ui-placeholder.ui-leftBottomCorner.ui-slide textarea~span, .ui-placeholder.ui-leftTopCorner.ui-slide input~span, .ui-placeholder.ui-leftCenter.ui-slide input~span, .ui-placeholder.ui-leftBottomCorner.ui-slide input~span {
+    right: 95%;
+}
+
+.ui-placeholder.ui-rightTopCorner.ui-slide textarea~span, .ui-placeholder.ui-rightCenter.ui-slide textarea~span, .ui-placeholder.ui-rightBottomCorner.ui-slide textarea~span, .ui-placeholder.ui-rightTopCorner.ui-slide input~span, .ui-placeholder.ui-rightCenter.ui-slide input~span, .ui-placeholder.ui-rightBottomCorner.ui-slide input~span {
+    left: 95%;
+}
+
+.ui-placeholder.ui-leftTop.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-centerTop.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-rightTop.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-leftTop.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-centerTop.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-rightTop.ui-slide input:not(:placeholder-shown)~span {
+    bottom: 100%;
+}
+
+.ui-placeholder.ui-leftBottom.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-centerBottom.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-rightBottom.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-leftBottom.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-centerBottom.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-rightBottom.ui-slide input:not(:placeholder-shown)~span {
+    top: 100%;
+}
+
+.ui-placeholder.ui-leftTopCorner.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-leftCenter.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-leftBottomCorner.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-leftTopCorner.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-leftCenter.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-leftBottomCorner.ui-slide input:not(:placeholder-shown)~span {
+    right: calc(100% + 5px);
+}
+
+.ui-placeholder.ui-rightTopCorner.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-rightCenter.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-rightBottomCorner.ui-slide textarea:not(:placeholder-shown)~span, .ui-placeholder.ui-rightTopCorner.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-rightCenter.ui-slide input:not(:placeholder-shown)~span, .ui-placeholder.ui-rightBottomCorner.ui-slide input:not(:placeholder-shown)~span {
+    left: calc(100% + 5px);
+}
+
+/* zoom effects */
+
+.ui-placeholder.ui-zoom input~span, .ui-placeholder.ui-zoom textarea~span {
+    transform: translateZ(20px);
+}
+
+.ui-placeholder.ui-centerTop.ui-zoom input~span, .ui-placeholder.ui-centerTop.ui-zoom textarea~span {
+    transform: translateX(-50%) translateZ(20px);
+}
+
+.ui-placeholder.ui-centerBottom.ui-zoom input~span, .ui-placeholder.ui-centerBottom.ui-zoom textarea~span {
+    transform: translateX(-50%) translateZ(20px);
+}
+
+.ui-placeholder.ui-leftCenter.ui-zoom input~span, .ui-placeholder.ui-leftCenter.ui-zoom textarea~span {
+    transform: translateY(-50%) translateZ(20px);
+}
+
+.ui-placeholder.ui-rightCenter.ui-zoom input~span, .ui-placeholder.ui-rightCenter.ui-zoom textarea~span {
+    transform: translateY(-50%) translateZ(20px);
+}
+
+.ui-placeholder.ui-zoom input:not(:placeholder-shown)~span, .ui-placeholder.ui-zoom textarea:not(:placeholder-shown)~span {
+    transform: translateZ(0px);
+}
+
+.ui-placeholder.ui-centerTop.ui-zoom input:not(:placeholder-shown)~span, .ui-placeholder.ui-centerTop.ui-zoom textarea:not(:placeholder-shown)~span {
+    transform: translateX(-50%) translateZ(0px);
+}
+
+.ui-placeholder.ui-centerBottom.ui-zoom input:not(:placeholder-shown)~span, .ui-placeholder.ui-centerBottom.ui-zoom textarea:not(:placeholder-shown)~span {
+    transform: translateX(-50%) translateZ(0px);
+}
+
+.ui-placeholder.ui-leftCenter.ui-zoom input:not(:placeholder-shown)~span, .ui-placeholder.ui-leftCenter.ui-zoom textarea:not(:placeholder-shown)~span {
+    transform: translateY(-50%) translateZ(0px);
+}
+
+.ui-placeholder.ui-rightCenter.ui-zoom input:not(:placeholder-shown)~span, .ui-placeholder.ui-rightCenter.ui-zoom textarea:not(:placeholder-shown)~span {
+    transform: translateY(-50%) translateZ(0px);
+}
+
+/* rotate effects */
+
+.ui-placeholder.ui-rotate input~span, .ui-placeholder.ui-rotate textarea~span {
+    transform: rotateY(180deg);
+}
+
+.ui-placeholder.ui-centerTop.ui-rotate input~span, .ui-placeholder.ui-centerTop.ui-rotate textarea~span {
+    transform: translateX(-50%) rotateY(180deg);
+}
+
+.ui-placeholder.ui-centerBottom.ui-rotate input~span, .ui-placeholder.ui-centerBottom.ui-rotate textarea~span {
+    transform: translateX(-50%) rotateY(180deg);
+}
+
+.ui-placeholder.ui-leftCenter.ui-rotate input~span, .ui-placeholder.ui-leftCenter.ui-rotate textarea~span {
+    transform: translateY(-50%) rotateY(180deg);
+}
+
+.ui-placeholder.ui-rightCenter.ui-rotate input~span, .ui-placeholder.ui-rightCenter.ui-rotate textarea~span {
+    transform: translateY(-50%) rotateY(180deg);
+}
+
+.ui-placeholder.ui-rotate input:not(:placeholder-shown)~span, .ui-placeholder.ui-rotate textarea:not(:placeholder-shown)~span {
+    transform: rotateY(0deg);
+}
+
+.ui-placeholder.ui-centerTop.ui-rotate input:not(:placeholder-shown)~span, .ui-placeholder.ui-centerTop.ui-rotate textarea:not(:placeholder-shown)~span {
+    transform: translateX(-50%) rotateY(0deg);
+}
+
+.ui-placeholder.ui-centerBottom.ui-rotate input:not(:placeholder-shown)~span, .ui-placeholder.ui-centerBottom.ui-rotate textarea:not(:placeholder-shown)~span {
+    transform: translateX(-50%) rotateY(0deg);
+}
+
+.ui-placeholder.ui-leftCenter.ui-rotate input:not(:placeholder-shown)~span, .ui-placeholder.ui-leftCenter.ui-rotate textarea:not(:placeholder-shown)~span {
+    transform: translateY(-50%) rotateY(0deg);
+}
+
+.ui-placeholder.ui-rightCenter.ui-rotate input:not(:placeholder-shown)~span, .ui-placeholder.ui-rightCenter.ui-rotate textarea:not(:placeholder-shown)~span {
+    transform: translateY(-50%) rotateY(0deg);
+}

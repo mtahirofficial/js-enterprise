@@ -1,0 +1,57 @@
+.topMenu {
+    /* position: absolute;
+    right: 10px; */
+    /* margin-top: 0px; */
+}
+
+.topMenuList {
+    padding: 0px 0px 0px 0px;
+    margin-top: -50px;
+    margin-bottom: -16px;
+}
+
+.menuItem {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 3px;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+
+}
+
+.menuLink {
+    display: block;
+    color: #696969;
+    text-decoration: none;
+}
+
+
+
+.menuLink:hover {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'ubuntu';
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(to right, #696969 10%, #fff 50%, #C01B36 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center
+    }
+}

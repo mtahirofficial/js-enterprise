@@ -1,0 +1,62 @@
+.headerLine {
+    height: 10px;
+    width: 100%;
+    background-color: #C01B36;
+}
+
+.logo {
+    background-color: #C01B36;
+    height: 160px;
+    width: 130px;
+    margin-top: 0px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.logoImage {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin: 40px 15px 0px 15px;
+}
+
+.companyName {
+    margin-top: 50px;
+    margin-left: 170px;
+}
+
+
+
+.name {
+    text-decoration: none;
+    color: #696969;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.companyName h1:hover {
+    cursor: pointer;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'ubuntu';
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right, #696969 10%, #fff 50%, #C01B36 60%);
+    background-size: auto auto;
+    background-clip: border-box;    
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center
+    }
+}

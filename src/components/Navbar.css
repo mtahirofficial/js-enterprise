@@ -1,0 +1,44 @@
+.NavList {
+    padding: 0px 0px 0px 0px;
+    border-bottom: 3px solid #C01B36;
+}
+
+.navItem {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 3px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+}
+
+.navItem:hover {
+    background-color: #C01B36;
+}
+
+.navLink {
+    display: block;
+    color: #696969;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    animation-name: color-change;
+    animation-duration: 1.5s;
+    color: #BDBEC2;
+}
+
+@keyframes color-change {
+    from {
+        background-color: #F0F0F0;
+        color: #696969;
+        border-radius: 5px;
+    }
+    to {
+        background-color: #C01B36;
+        color: #BDBEC2;
+        border-radius: 5px;
+    }
+}

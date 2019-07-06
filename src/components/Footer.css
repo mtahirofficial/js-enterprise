@@ -1,0 +1,36 @@
+.footer {
+    background-color: #C01B36;
+    height: auto;
+    width: 100%;
+}
+
+
+
+.Copyright {
+    line-height: 100px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #BDBEC2;
+    padding-left: 100px;
+}
+
+.copySymbol {
+    font-size: 30px;
+}
+
+.developer {
+    float: right;
+    padding-right: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    position: relative;
+    right: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Fm-DevnDesign {
+    font-size: 25px;
+    text-decoration: none;
+    color: #BDBEC2;
+    font-weight: bold;
+}

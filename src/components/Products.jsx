@@ -11,7 +11,7 @@ class Products extends Component {
                     <div className="mt-5">
                         <h3>Our Products</h3>
                         <div className="card-deck mt-5">
-                            <div className="card shadow-lg p-3 mb-5 bg-white rounded product">
+                            <div className="card shadow-lg p-3 mb-5 rounded product">
                                 <img src={cup} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
@@ -21,7 +21,7 @@ class Products extends Component {
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
-                            <div className="card shadow-lg p-3 mb-5 bg-white rounded product">
+                            <div className="card shadow-lg p-3 mb-5 rounded product">
                                 <img src={cup} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
@@ -31,7 +31,7 @@ class Products extends Component {
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
-                            <div className="card shadow-lg p-3 mb-5 bg-white rounded product">
+                            <div className="card shadow-lg p-3 mb-5 rounded product">
                                 <img src={cup} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
@@ -43,7 +43,7 @@ class Products extends Component {
                             </div>
                         </div>
                         <div className="card-deck mt-5">
-                            <div className="card shadow-lg p-3 mb-5 bg-white rounded product">
+                            <div className="card shadow-lg p-3 mb-5 rounded product">
                                 <img src={cup} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
@@ -53,7 +53,7 @@ class Products extends Component {
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
-                            <div className="card shadow-lg p-3 mb-5 bg-white rounded product">
+                            <div className="card shadow-lg p-3 mb-5 rounded product">
                                 <img src={cup} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
@@ -63,7 +63,7 @@ class Products extends Component {
                                     <small className="text-muted">Last updated 3 mins ago</small>
                                 </div>
                             </div>
-                            <div className="card shadow-lg p-3 mb-5 bg-white rounded product">
+                            <div className="card shadow-lg p-3 mb-5 rounded product">
                                 <img src={cup} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>

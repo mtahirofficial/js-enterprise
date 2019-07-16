@@ -29,24 +29,24 @@ class Slider extends Component {
         return (
             <div>
                 <div className="container out">
-                    <div className="row">
-                        {/* <div className="col-sm-12 col-md-12"> */}
-                            <div className="slideshow">
-                                <div>
-                                    <img className="img-fluid" src={one} alt="" />
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={two} alt="" />
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={three} alt="" />
-                                </div>
-                                <div>
-                                    <img className="img-fluid" src={four} alt="" />
-                                </div>
-                            </div>
-                        {/* </div> */}
+                    {/* <div className="row"> */}
+                    {/* <div className="col-sm-12 col-md-12"> */}
+                    <div className="slideshow">
+                        <div>
+                            <img className="img-responsive" src={one} alt="" />
+                        </div>
+                        <div>
+                            <img className="img-responsive" src={two} alt="" />
+                        </div>
+                        <div>
+                            <img className="img-responsive" src={three} alt="" />
+                        </div>
+                        <div>
+                            <img className="img-responsive" src={four} alt="" />
+                        </div>
                     </div>
+                    {/* </div> */}
+                    {/* </div> */}
                 </div>
             </div>
         );
